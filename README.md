@@ -1,4 +1,4 @@
-_Note: I took the git course as a stand alone course and not as part of a nano degree.  Therefore, I did not complete the bike share project.  I attempted to write python code based on the function descriptions but my code may not match the expected functionality base on the original course content._
+_Note: I took the git course as a stand alone course and not as part of a nano degree.  Therefore, I did not complete the bike share project.  I attempted to write python code based on the function descriptions but my code may not match the expected functionality based on the original course content._
 
 ### Date created
 5/9/2024
