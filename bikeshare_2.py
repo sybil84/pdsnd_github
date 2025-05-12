@@ -32,8 +32,9 @@ def get_filters():
         month = str(input('\nEnter the full name of a month (example january) or all:\n')).lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
+    days = [x.lower() for x in list(calendar.day_name)]
     day = ''
-    while day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
+    while day not in days:
         day = str(input('\nEnter the full name of a day (example monday) or all:\n')).lower()
 
     print('-'*40)
