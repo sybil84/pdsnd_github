@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from datetime import datetime
 from collections import Counter
+import calendar
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -24,8 +25,10 @@ def get_filters():
         city = str(input('\nEnter a city: chicago, new york city or washington\n')).lower()
 
     # get user input for month (all, january, february, ... , june)
+    months = [x.lower() for x in list(calendar.month_name)[1:]]
+    months.append('all')
     month = ''
-    while month not in ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december', 'all']:
+    while month not in months:
         month = str(input('\nEnter the full name of a month (example january) or all:\n')).lower()
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
